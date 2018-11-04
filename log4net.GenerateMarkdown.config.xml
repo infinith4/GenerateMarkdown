@@ -3,7 +3,7 @@
   <log4net>
     <!-- 通常ログ：分割ファイル出力 -->
     <appender name="InfoLogDailyAppender" type="log4net.Appender.RollingFileAppender">
-      <param name="File" value=".\\DbConfiguration_Logs\\Info_" />
+      <param name="File" value=".\\GenerateMarkdown_Logs\\Info_" />
       <param name="DatePattern" value='yyyyMMdd".log"' />
       <param name="RollingStyle" value="date" />
       <param name="StaticLogFileName" value="false" />
@@ -21,7 +21,7 @@
     <!-- エラーログ：分割ファイル出力 -->
     <appender name="ErrorLogDailyAppender" type="log4net.Appender.RollingFileAppender">
       <!-- ファイル名は日付ごと -->
-      <param name="File" value=".\\DbConfiguration_Logs\\Error_" />
+      <param name="File" value=".\\GenerateMarkdown_Logs\\Error_" />
       <param name="DatePattern" value='yyyyMMdd".log"' />
       <param name="RollingStyle" value="date" />
       <param name="StaticLogFileName" value="false" />
@@ -39,7 +39,7 @@
     <!-- デバッグ用：分割ファイル出力 -->
     <appender name="DebugLogDailyAppender" type="log4net.Appender.RollingFileAppender">
       <!-- ファイル名は日付ごと -->
-      <param name="File" value=".\\DbConfiguration_Logs\\Trace_" />
+      <param name="File" value=".\\GenerateMarkdown_Logs\\Trace_" />
       <param name="DatePattern" value='yyyyMMdd".log"' />
       <param name="RollingStyle" value="date" />
       <param name="StaticLogFileName" value="false" />
